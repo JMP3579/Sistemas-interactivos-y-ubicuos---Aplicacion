@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="mapa.css">
+  <link rel="stylesheet" href="..//comun.css">
+  <title>Mundos : Reino Hielo</title>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body class="2">
+  <div class="titulo">
+    <h1 class="nombre-mapa">02. Reino Hielo</h1>
+    <div class="lunas">
+      <p id="lunasTotales">23 / 56</p>
+      <img class="mapa-imagen" src="..//images/Luna.webp">   
+    </div>
+  </div>
+  <div class="contenedor-video" id="contenedor-video">
+    <div id="player"></div>
+  </div>
+  <div class="mapa">
+    <img src="./images/MapaHielo.png">
+    <div class="punto"></div>
+  </div>
+
+  
+</body>
+  <script type="module" src="./script/mapa.js"></script>
+  <script type="module" src="./../lunaVar.js"></script>
+</html>

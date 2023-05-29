@@ -1,0 +1,15 @@
+
+body {
+    background: url("./images/Estrellas.png") , linear-gradient(to bottom, #000000, #04080a, #0a2231);
+    background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}

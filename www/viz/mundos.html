@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="..//comun.css">
+  <title>Mundos</title>
+</head>
+
+<body>
+  <div class="planeta">
+    <img src="images/PlanetaMario.png">
+  </div>
+  <div class="info">
+    <h1 id="nombre-mundo">1. Reino Sombrero</h1>
+    <img id="imagen-mundo" src="images/ReinoPerdido.webp">
+  </div>
+  <div class="menú">
+    <div class="menu-rectangulo"></div>
+    <div id="mundo-1" class="active">
+      <div id="punto-1" class="menu-punto"></div>
+      <p id="nombre-1" class="menu-nombre">Reino Perdido</p>
+    </div>
+
+    <div id="mundo-2">
+      <div id="punto-2" class="menu-punto"></div>
+      <p id="nombre-2" class="menu-nombre">Reino Hielo</p>
+    </div>
+
+    <div id="mundo-3">
+      <div id="punto-3" class="menu-punto"></div>
+      <p id="nombre-3" class="menu-nombre">Reino Sombrero</p>
+    </div>
+  </div>
+  <div class="rectangulo"></div>
+  <script type="module" src="./script/mundos.js"></script>
+</body>
+
+</html>

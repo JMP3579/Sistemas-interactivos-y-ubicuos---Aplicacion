@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Controlador de mundos</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="..//comun.css">
+
+  </head>
+
+  <body id = "mundo">
+    <div class="fondo"></div>
+    <section id="roulette">
+      <div class="container">
+            <h1 class="text-center">Mundos</h1>
+      </div>
+      <div class="container">
+        <div class="swiper slider">
+          <div class="swiper-wrapper">
+            
+            <!-- Slide -->
+            <div class="swiper-slide slide" data-num="1">
+              <div class="slide-img">
+                <img src="images/Tropical.webp" alt="Mundo 1">
+              </div>
+              <div class="slide-content">
+                <div class="description-top">
+                  <h2 class="text-center">1. Reino Perdido</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+
+            <!-- Slide -->
+            <div class="swiper-slide slide" data-num="2">
+                <div class="slide-img">
+                  <img src="images/Friolandeses.png" alt="Mundo 2">
+                </div>
+                <div class="slide-content">
+                  <div class="description-top">
+                    <h2 class="text-center">2. Reino Hielo</h2>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide -->
+
+            <!-- Slide -->
+            <div class="swiper-slide slide" data-num="3">
+                <div class="slide-img">
+                  <img src="images/Cappy.webp" alt="Mundo 3">
+                </div>
+                <div class="slide-content">
+                  <div class="description-top">
+                    <h2 class="text-center">3. Reino Sombrero</h2>
+                  </div>
+                </div>
+              </div>
+            <!-- Slide -->
+       
+          </div>
+
+          <div class="lunas">
+            <p id ="lunasTotales">23 / 56</p>
+            <img src="..//images/Luna.webp">   
+          </div>
+          <button class="cambiar_usuario" id="cambiar_usuario">
+            <img src="..//images/flecha_retroceso.png" alt="icono flecha_retroceso" id="flecha_retroceso">
+          </button>
+          <button class="info" id="info">
+            <img src="..//images/ayuda.png" alt="icono ayuda" id="icono_ayuda">
+          </button>
+          <div class="popup" id="popup">
+            <span class="cerrarPopup" id="cerrarPopup">&times;</span>
+            <p>Desliza o agita el controlador para navegar por los distintos mundos.</p>
+            <p>Haz un doble "tap" para entrar el el mundos seleccionado.</p>
+            <p>Desliza con un dedo hacia arriba en la pantalla para regresar a la selección de usuario.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./script/script.js"></script>
+    <script type="module" src="./script/mundos.js"></script>
+    <script src="..//script.js"></script>
+    <script type="module" src="./../lunaVar.js"></script>
+  </body>
+
+</html>

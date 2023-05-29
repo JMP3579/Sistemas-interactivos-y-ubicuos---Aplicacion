@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.planeta img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+}
+
+.menu-rectangulo {
+  position: absolute;
+  width: 35%;
+  height: 15px;
+  left: 0;
+  bottom: 75px;
+
+  background: #E03333;
+  border-radius: 5px;
+
+  margin: auto 5rem;
+}
+
+.menu-punto {
+  background-color: #F5F5F5;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 75px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#punto-1 {
+  left: calc((35% / 6) + 4.5rem);
+}
+#punto-2 {
+  left: calc((35% / 6)*3 + 4.5rem);
+}
+#punto-3 {
+  left: calc((35% / 6)*5 + 4.5rem);
+}
+
+.menu-nombre {
+  position: absolute;
+  padding: 0.5rem 2rem 1rem 4rem;
+  bottom: 165px;
+  width: 270px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #FFFFFF;
+
+  transform: rotate(-70deg);
+}
+
+#nombre-1 {
+  left: calc((35% / 6) - 0.9rem);
+}
+#nombre-2 {
+  left: calc((35% / 6)*3 - 0.9rem);
+}
+#nombre-3 {
+  left: calc((35% / 6)*5 - 0.9rem);
+}
+
+.active p{
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.active div {
+  background-color: black;
+  background-image: url(images/super-mario.png);
+}
+
+.info {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  color: #F5F5F5;
+}
+
+.info img{
+  margin-top: 2rem;
+  width: 28rem;
+  height: 15rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.inicio {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-barra {
+  box-sizing: border-box;
+  width: 948px;
+  height: 86px;
+  background-color: #8866A5;
+  border: 10px solid #CFBCDE;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inicio p {
+  color: black;
+  height: 32px;
+  font-weight: bold;
+  font-size: large;
+  z-index: 1;
+}
+
+.inicio img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.barra-dentro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0%;
+  height: 70px;
+  background: #CFBCDE;
+  z-index: 0;
+}
+
+.contenedor-barra .contenedor-p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

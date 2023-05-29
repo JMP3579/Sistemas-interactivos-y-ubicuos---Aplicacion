@@ -1,0 +1,39 @@
+<html>
+    <head>
+      <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="comun.css">
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <title>Inicio aplicación</title>
+    </head>
+    <body> 
+      <div class="fondo"></div>
+      <div id="controlador">
+        <div>
+          <h1>Controlador (Móvil)</h1>
+          <a href="controller/inicio.html">controller/inicio.html</a>
+        </div>
+        <div id="qrcode"></div>
+      </div>
+      <div id="visualizador">
+        <div>
+          <h1>Visualizador (Ordenador)</h1>
+          <a href="viz/inicio.html">viz/inicio.html</a>
+        </div>
+      </div>
+      
+      <script>
+        const qrcode = new QRCode("qrcode", {
+          text: "http://localhost:5500/controller/inicio.html",
+          width: 256,
+          height: 256,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H
+        });
+      </script>
+      <script src="script.js"></script>
+    </body>
+</html>

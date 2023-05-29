@@ -1,0 +1,123 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.titulo {
+  position: absolute;
+  width: 50%;
+  height: 80px;
+  left: 20px;
+  top: 70px;
+
+  margin-left: 3rem;
+}
+
+.nombre-mapa {
+  font-weight: bold;
+  font-size: 64px;
+  color: #FFFFFF;
+}
+
+.lunas {
+  font-weight: bold;
+  font-size: 32px;
+  align-items: center;
+  margin-left: 6rem;
+
+  color: #FFFFFF;
+
+  display: flex;
+}
+
+.lunas img {
+  margin-left: 1rem;
+  height: 3.5rem;
+}
+
+.brillo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+  box-shadow:0 0 20px 20px white , 0 0 5px 5px black;
+  animation: shadow 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 20px 20px white , 0 0 5px 5px black;
+  }
+  50% {
+    box-shadow: 0 0 5px 5px white , 0 0 20px 20px black;
+  }
+  100% {
+    box-shadow: 0 0 20px 20px white , 0 0 5px 5px black;
+  }
+}
+
+
+.mapa {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 88%;
+
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: -2;
+}
+
+.mapa img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  z-index: -2;
+}
+
+.conseguida {
+  filter: grayscale(100%);
+}
+
+.luna {
+  height: 2rem !important; 
+  width: 2rem !important; 
+  z-index: 3 !important;
+}
+
+
+.contenedor-video {
+  position: absolute;
+  left: 100px;
+  top: calc(50% + 50px);
+  transform: translateY(-50%);
+
+  width: 35%;
+  max-height: 40% !important; 
+  min-height: 40% !important;
+  background-color: #242222;
+
+  height: 0;
+  overflow: hidden;
+}
+
+
+.contenedor-video iframe,  
+.contenedor-video object,  
+.contenedor-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

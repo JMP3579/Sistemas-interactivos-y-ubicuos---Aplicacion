@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Controlador de lunas</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="..//comun.css">
+    <script type="module" src="./script/lunas.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+  </head>
+
+  <body id="lunas">
+    <section id="roulette">   
+      <div class="container">
+        <div class="container">
+          <h1 class="text-center titulo-mundo">Mundos</h1>
+        </div>
+        <div class="swiper slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" data-num="1" id="luna-arbol">
+              
+            </div>
+          
+          </div>
+
+          <div class="controles">
+            <button id="play" class="control">
+              <img id="imagenplay" src="images/imagen_play.png">
+              <img id="imagenstop" src="images/imagen_stop.png">
+            </button>
+            <button id="tickBoton" class="control">
+              <span class="tick">&#10004;</span>
+            </button>
+            <button id="speech" class="control">
+              <img src="..//images/microfono.png" alt="icono microfono">
+            </button>
+            <button class="info" id="info">
+              <img src="..//images/ayuda.png" alt="icono ayuda" id="icono_ayuda">
+            </button>
+            <button class="cambiar_mundo" id="cambiar_mundo">
+              <img src="..//images/flecha_retroceso.png" alt="icono flecha_retroceso" id="flecha_retroceso">
+            </button>
+            <div class="popup" id="popup">
+              <span class="cerrarPopup" id="cerrarPopup">&times;</span>
+              <p>Desliza para navegar por las distintas lunas.</p>
+              <p>Si has recogido una luna márcala con el botón con un "tick" o agita tu controlador.</p>
+              <p>Avanza y retrocede en el video utilizando los botones o haciendo doble "tap" en el lado izquierdo de la pantalla para retroceder y en el derecho para avanzar.</p>
+              <p>Pulsa el botón con el micrófono para dar un comando por voz:
+                    "Bajar volumen" disminuye el volumen del video.
+                    "Subir volumen" aumenta el volumen del video.
+                    "Luna {numero}" te lleva a la luna indicada.
+                    "Parar" o "Stop" paran el video.
+                    "Reproducir" o "Play" reproducen el video.</p>
+              <p>También se puede utilizar el botón de "Play" para reproducir o parar el video</p>
+              <p>Para volver a la selección de mundo deslizar hacía arriba en la pantalla del controlador con 1 dedo.</p>
+            </div>
+          </div>
+          <div>
+            <button id="tmenos5" class="control">- 5</button>
+            <button id="tmas5" class="control">+ 5</button>
+          </div>
+        </div>
+      </div> 
+      
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./../lunaVar.js"></script>
+
+  </body>
+</html>
